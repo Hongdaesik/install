@@ -1,0 +1,12 @@
+
+/* ip */
+.row .copy {
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0px !important;
+  display: none;
+  position: absolute;
+  transform: translate(-100%, -100%);
+}

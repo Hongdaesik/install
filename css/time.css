@@ -1,0 +1,131 @@
+.row .domain {
+  margin: 10px 0px;
+  position: relative;
+}
+
+.row .domain>input {
+  margin: 0;
+  height: 60px;
+  font-size: 30px;
+  padding-right: 44px;
+  letter-spacing: 2px;
+}
+
+.row .domain>.connect {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.row .domain>.material-icons {
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.row .content .error {
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  position: absolute;
+  font-size: 50px;
+  text-align: center;
+}
+
+.row .content .error.active {
+  display: block;
+}
+
+.row .content .digit {
+  width: 660px;
+  margin: 100px auto;
+  opacity: 0;
+  overflow: hidden;
+  font-size: 50px;
+}
+
+.row .content .digit.active {
+  opacity: 1;
+  display: block;
+}
+
+.row .content .digit>.clock,
+.row .content .digit>.clock>div,
+.row .content .digit>.calendar {
+  float: left;
+  overflow: hidden;
+}
+
+.row .content .digit>.clock>div,
+.row .content .digit>.calendar>div {
+  overflow: hidden;
+}
+
+.row .content .digit>.calendar {
+  margin-right: 20px;
+}
+
+.row .content .digit>.clock>div>span,
+.row .content .digit>.calendar>div>span {
+  float: right;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 5px;
+}
+
+.row .content .digit>.clock>div>.prefix,
+.row .content .digit>.calendar>div>.prefix {
+  float: right;
+  width: 35px;
+  height: 50px;
+  padding: 25px 10px 0 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width : 1040px) {
+
+  .row .domain>input {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .row .content .error {
+    font-size: 20px;
+  }
+
+  .row .content .digit {
+    width: 100%;
+    margin: 40px auto;
+    font-size: 40px;
+  }
+
+  .row .content .digit>.clock {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .row .content .digit>.calendar {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .row .content .digit>.clock>div>span,
+  .row .content .digit>.calendar>div>span {
+    width: 30px;
+  }
+
+  .row .content .digit>.clock>div>.prefix,
+  .row .content .digit>.calendar>div>.prefix {
+    width: 25px;
+    font-size: 15px;
+  }
+}
